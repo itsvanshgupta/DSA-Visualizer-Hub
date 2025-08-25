@@ -1,2 +1,2 @@
-# dsa-visualizer
+# DSA VISUALIZER HUB
 
