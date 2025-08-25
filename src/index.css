@@ -9,10 +9,93 @@
                   radial-gradient(800px 400px at 50% 120%, rgba(34,197,94,0.12), transparent 60%);
 }
 
+/* Ensure all elements have dark background */
+* {
+  background-color: inherit;
+}
+
+html {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  min-height: 100vh;
+}
+
 body {
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  background-image: var(--bg-gradient);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
   background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+}
+
+#root {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  min-height: 100vh;
+}
+
+/* Override any potential white backgrounds on common elements */
+input, textarea, select, button {
+  background-color: #1e293b !important;
+  color: white !important;
+}
+
+/* Ensure no white backgrounds anywhere */
+div, section, article, aside, header, footer, main, nav {
+  background-color: transparent !important;
+}
+
+/* Override any Tailwind default backgrounds */
+.bg-white, .bg-gray-50, .bg-slate-50, .bg-zinc-50 {
+  background-color: #1e293b !important;
+}
+
+/* Additional overrides for any light backgrounds */
+.bg-gray-100, .bg-slate-100, .bg-zinc-100,
+.bg-gray-200, .bg-slate-200, .bg-zinc-200 {
+  background-color: #334155 !important;
+}
+
+/* Ensure all form elements have dark backgrounds */
+input[type="text"], input[type="number"], input[type="email"], input[type="password"],
+textarea, select, option {
+  background-color: #1e293b !important;
+  color: white !important;
+  border-color: #475569 !important;
+}
+
+/* Override any potential white text on dark backgrounds */
+.text-gray-900, .text-slate-900, .text-zinc-900 {
+  color: white !important;
+}
+
+/* Additional comprehensive dark background overrides */
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+/* Ensure no light backgrounds anywhere */
+.bg-gray-50, .bg-slate-50, .bg-zinc-50,
+.bg-gray-100, .bg-slate-100, .bg-zinc-100,
+.bg-gray-200, .bg-slate-200, .bg-zinc-200,
+.bg-white, .bg-slate-50, .bg-zinc-50 {
+  background-color: #1e293b !important;
+}
+
+/* Override any potential light text that might be hard to read */
+.text-gray-700, .text-slate-700, .text-zinc-700 {
+  color: #cbd5e1 !important;
+}
+
+.text-gray-600, .text-slate-600, .text-zinc-600 {
+  color: #94a3b8 !important;
+}
+
+/* Final catch-all for any remaining white backgrounds */
+* {
+  background-color: transparent !important;
+}
+
+html, body, #root {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important;
 }
 
 /* Utility for a subtle grid overlay */

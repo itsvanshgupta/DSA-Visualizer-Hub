@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         inter: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
       },
+      backgroundColor: {
+        DEFAULT: '#0f172a', // Default dark background
+      },
       backgroundImage: {
         'grid-small':
           "linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)",
@@ -62,7 +65,6 @@ export default {
     "border-red-500",
     // Text colors used dynamically
     "text-white",
-    "text-gray-900",
   ],
   plugins: [],
 }

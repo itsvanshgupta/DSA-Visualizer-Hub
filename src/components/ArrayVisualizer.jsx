@@ -631,7 +631,7 @@ const SortingVisualizer = ({ onBackToDashboard }) => {
               if (highlight.type === 'compare' && (idx === highlight.i || idx === highlight.j)) {
                 barColor = "from-yellow-400 to-orange-500";
                 borderColor = "border-yellow-400";
-                textColor = "text-gray-900";
+                textColor = "text-white";
               }
               // Highlight current element (e.g., in insertion/selection sort, red/pink)
               if (highlight.type === 'current' && idx === highlight.i) {
@@ -643,13 +643,13 @@ const SortingVisualizer = ({ onBackToDashboard }) => {
               if (highlight.type === 'min' && idx === highlight.min) {
                 barColor = "from-teal-400 to-cyan-500";
                 borderColor = "border-teal-400";
-                textColor = "text-gray-900";
+                textColor = "text-white";
               }
               // Highlight pivot (in quick sort, green/lime)
               if (highlight.type === 'pivot' && idx === highlight.i) {
                 barColor = "from-green-400 to-lime-500";
                 borderColor = "border-green-400";
-                textColor = "text-gray-900";
+                textColor = "text-white";
               }
               // Highlight swapped elements (red) with stripes
               if (highlight.type === 'swap' && (idx === highlight.swapI || idx === highlight.swapJ)) {
@@ -1032,7 +1032,7 @@ const SearchingVisualizer = ({ onBackToDashboard }) => {
               if (idx === highlightIndex) {
                 barColor = "from-yellow-400 to-orange-500"; // Currently checking
                 borderColor = "border-yellow-400";
-                textColor = "text-gray-900";
+                textColor = "text-white";
               }
               if (idx === foundIndex || (foundIndex !== -1)) {
                 barColor = "from-green-400 to-emerald-600"; // Found target or after found, all green
